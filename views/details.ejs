@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head")  %>
+
+
+<body>
+    <%-  include("./partials/header")  %> 
+
+<h1>
+    
+    <%= article.title %> 
+</h1>
+
+
+
+<p style="font-size: 19px; margin: 5em ;">
+    <%= article.body %> 
+</p>
+
+<button data-linkid="<%= article.id %>" class="create">Delete</button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <%-  include("./partials/footer")  %> 
+</body>
+</html>

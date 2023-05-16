@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+<html lang="ar">
+    <%- include("./partials/head")  %>
+
+<body id="body">
+    <%- include("./partials/header")  %>
+
+    <main id="main">
+        <section>
+            <h1>
+                Trending Articles &#128293;
+            </h1>
+
+            <div class="parent-of-articles">
+                <% articles.forEach(function(article){  %>
+                    <article>
+                        <h2>
+                            <%= article.title %>
+                        </h2>
+    
+    
+                        <p>
+                            <%= article.summary %>
+    
+    
+                            <a class="btn" href="article-details/<%=article.id %>">show more</a>
+                        </p>
+                    </article>
+                    <%  }); %>
+
+            </div>
+
+
+        </section>
+
+
+
+    </main>
+
+<%- include("./partials/footer") %>
+
+
+</body>
+
+</html>
